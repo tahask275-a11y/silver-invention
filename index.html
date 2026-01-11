@@ -16,12 +16,12 @@
 
         <div id="main-hub">
             <h1 class="title">Marathi Prep</h1>
-            <p style="text-align: center; color: var(--text-gray);">Select a module to begin</p>
+            <p style="text-align: center; color: var(--text-gray); margin-bottom: 20px;">Zari Edition</p>
             <div class="hub-grid">
-                <div class="card" onclick="openModule('letter')">📩 Letter Phrases</div>
+                <div class="card" onclick="openModule('letter')">📩 Letter Writing</div>
                 <div class="card" onclick="openModule('swamat')">✍️ Self Answers</div>
-                <div class="card" onclick="openModule('vocab')">📖 Common Words</div>
-                <div class="card" onclick="openModule('basics')">🌱 Basic Words</div>
+                <div class="card" onclick="openModule('basics')">🌱 Basics</div>
+                <div class="card" onclick="openModule('exam')">🎓 Exam Prep</div>
             </div>
         </div>
 
@@ -33,9 +33,9 @@
                 </div>
             </div>
             
-            <h2 id="module-title" class="module-title">MODULE</h2>
+            <h2 id="module-title" class="module-title" style="text-align: center;">MODULE</h2>
             
-            <div class="tab-menu">
+            <div class="tab-menu hidden" id="tab-menu">
                 <button class="tab-btn active" id="btn-flash" onclick="renderFlashcards()">Flashcards</button>
                 <button class="tab-btn" id="btn-test" onclick="startTest()">Test Mode</button>
             </div>
